@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  background: linear-gradient(#031c4e, #4267b2);
 }
 nav {
   position: fixed;
@@ -25,6 +29,7 @@ nav h2 {
     no-repeat;
   height: 100vh;
   width: 100%;
+  /* max-width: 1200px; */
   background-size: cover;
   background-position: center;
   object-fit: cover;
@@ -73,6 +78,7 @@ form button {
 
 .skills-container {
   width: 100%;
+  max-width: 1200px;
   margin: 4rem auto;
 }
 .skills-container header {
@@ -80,11 +86,14 @@ form button {
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
-
+.skills-container header h4 {
+  color: aliceblue;
+}
 .skills-list {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  width: 100%;
+  /* gap: 1rem; */
   flex-wrap: wrap;
 }
 .skills-list span {
@@ -93,4 +102,211 @@ form button {
   text-shadow: 2px 5px 9px rgba(0, 0, 0, 0.6);
   font-size: 1.2rem;
   text-align: center;
+  color: rgb(207, 212, 218);
+}
+
+.project h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+.project .image {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  margin: auto;
+}
+.project .image a {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.project .image a img {
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+  max-width: 1020px;
+  padding: 1rem;
+}
+/* checklist */
+footer {
+  height: 10rem;
+  align-items: center;
+}
+footer .bottom {
+  background: #002;
+  display: flex;
+  justify-content: space-between;
+  color: #002;
+}
+footer div h3 {
+  margin: auto;
+  color: aliceblue;
+  text-transform: capitalize;
+}
+footer .bottom .media-icons {
+  border: 2px solid green;
+}
+/* footer .bottom .media-icons a {
+  height: 40px;
+  width: 40px;
+
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+}
+.bottom .media-icons a:nth-child(1) {
+  background: #4267b2;
+  width: 5px;
+
+  padding: 0.2rem;
+}
+.bottom .media-icons a:nth-child(1):hover {
+  color: #4267b2;
+  background-color: #ffffff;
+}
+.bottom .media-icons a:nth-child(2) {
+  background: #1da1f2;
+  padding: 0.2rem;
+}
+.bottom .media-icons a:nth-child(2):hover {
+  color: #1da1f2;
+  background-color: #ffffff;
+}
+.bottom .media-icons a:nth-child(3) {
+  background: #e1306c;
+  padding: 0.2rem;
+}
+.bottom .media-icons a:nth-child(3):hover {
+  color: #e1306c;
+  background-color: #ffffff;
+}
+.bottom .media-icons a:nth-child(4) {
+  background: #007785;
+  padding: 0.2rem;
+}
+.bottom .media-icons a:nth-child(4):hover {
+  color: #007785;
+  background-color: #ffffff;
+}
+.bottom .media-icons a:nth-child(5) {
+  background: #ff0000;
+  padding: 0.2rem;
+}
+.bottom .media-icons a:nth-child(5):hover {
+  color: #ff0000;
+  background-color: #ffffff;
+} */
+footer .company-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  margin: auto;
+  padding: 10px;
+  background: linear-gradient(#031c4e, #4267b2);
+}
+.company-container ul {
+  list-style: none;
+}
+.company-container h2 {
+  color: aliceblue;
+  text-transform: uppercase;
+}
+.company-container ul h4 {
+  text-transform: capitalize;
+  padding-bottom: 0.5rem;
+  color: rgb(203, 213, 222);
+  text-transform: uppercase;
+  text-decoration: underline;
+  transition: all 0.5s ease-out;
+}
+.company-container ul li {
+  padding-bottom: 5px;
+  font-weight: 500;
+  color: azure;
+  transition: all 0.2s ease-out;
+}
+.company-container ul li:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+  text-align: left;
+
+  transform: scaleX(1.1);
+}
+.company-container ul li .mylocation {
+  color: #ff0000;
+}
+.company-container ul li .mymessage {
+  color: #333333;
+  padding: 2px;
+  border-radius: 5px;
+  background: #fff;
+}
+.company-container ul li .myfone {
+  background: #25d366;
+  padding: 2px;
+  border-radius: 5px;
+}
+.company-container ul li .whatsapp {
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  background: #25d366;
+}
+.company-container ul li a {
+  text-decoration: none;
+  color: azure;
+}
+.copy-closure-sect {
+  background: linear-gradient(#3a72e0, #031c4e);
+}
+.copy-closure-sect .copyright-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  font-size: 12px;
+  color: aliceblue;
+}
+.copy-closure-sect .closure {
+  text-align: center;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .skills-container {
+    width: 100%;
+  }
+  .skills-list {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .company-container {
+    display: grid;
+
+    width: 100%;
+  }
+  .company-container h2 {
+    padding: 10px 5px;
+    padding-top: 0.5rem;
+  }
+  .company-container ul h4 {
+    margin-left: 5px;
+    padding-bottom: 1rem;
+  }
+  .bottom h3 {
+    font-size: 15px;
+  }
+  .project .image a img {
+    width: 100%;
+  }
 }
