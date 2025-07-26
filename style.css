@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 1s ease-out;
 }
 body {
   background: linear-gradient(#031c4e, #4267b2);
-  transition: all 0.9s ease-out;
 }
 nav {
   position: fixed;
@@ -43,10 +43,11 @@ nav h2 {
 }
 .article h3 {
   font-size: 2rem;
+  color: #20dcb0;
 }
 .article article {
   padding: 1rem;
-  color: aqua;
+  color: rgb(1, 211, 211);
 }
 .btn input {
   height: 2rem;
@@ -158,7 +159,7 @@ footer {
   color: snow;
 }
 .footer-header h2 {
-  background: linear-gradient(45deg, #fffff8, #200cd3, #03f903);
+  background: linear-gradient(45deg, #fffff8, #04e046, #f90320);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -339,5 +340,12 @@ ul li:hover {
   }
   .skills-list {
     width: 100%;
+  }
+  .social-icons a {
+    padding: 2px;
+  }
+  .social-icons a:nth-child(1) {
+    /* background: #fff; */
+    background: #4267b2;
   }
 }
